@@ -1,0 +1,22 @@
+{
+  "name": "currency-rounder",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "source": "src/index.ts",
+  "main": "dist/main.js",
+  "browserslist": ["> 0.5%"],
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build --no-content-hash --no-source-maps",
+    "test": "ts-node-esm src/moneyrounder.test.ts",
+    "check": "tsc --noEmit"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.7.0",
+    "typescript": "^4.8.4",
+    "ts-node": "^10.9.1"
+  }
+}
