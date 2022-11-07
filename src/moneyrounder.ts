@@ -1,7 +1,7 @@
 export function moneyRounding(amount: number): number {
-    const remainder = rounded(amount % 1)
-    if (remainder >= 0.9) {
-        return amount - remainder + 1
+    const tenCentsRemainder = rounded(amount % 1)
+    if (tenCentsRemainder >= 0.9) {
+        return amount - tenCentsRemainder + 1
     }
     const centRemainder = rounded(amount * 10 % 1)
     if (centRemainder >= 0.9) {
