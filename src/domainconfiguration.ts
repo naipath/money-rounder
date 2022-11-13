@@ -31,21 +31,33 @@ const parseDollarToNumber = (input: string) => {
         .trim()
 }
 
+const parseEuroToNumberWithWrongDots = (input: string) =>
+    input
+        .replace("€", "")
+        .replace(".", ".")
+        .replace(",", ".")
+        .replace("-", "")
+        .replace("\n  ", ".")
+        .trim()
+
 export const defaultFormatter = (input: number) => euroFormat.format(input)
 export const defaultTextParser = parseEuroToNumber
 
 export const domainSelectors: DomainSelectors = {
+    "www.ikea.com": [
+        {
+            selector: ".pip-temp-price-module__price",
+            textParser: parseEuroToNumberWithWrongDots
+        },
+        {
+            selector: ".pip-price",
+            textParser: parseEuroToNumberWithWrongDots
+        }
+    ],
     "www.ah.nl": [
         {
             selector: ".price-amount_root__37xv2",
-            textParser: (input) =>
-                input
-                    .replace("€", "")
-                    .replace(".", ".")
-                    .replace(",", ".")
-                    .replace("-", "")
-                    .replace("\n  ", ".")
-                    .trim()
+            textParser: parseEuroToNumberWithWrongDots
         }
     ],
     "tweakers.net": [

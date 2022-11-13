@@ -16,7 +16,8 @@
         "*://*.mediamarkt.nl/*",
         "*://*.logitech.com/*",
         "*://*.tweakers.net/*",
-        "*://*.ah.nl/*"
+        "*://*.ah.nl/*",
+        "*://*.ikea.com/*"
       ],
       "js": [
         "dist/main.js"
