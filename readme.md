@@ -5,6 +5,7 @@ This browser extension rounds money.
 To prevent you from being influenced by deceptive price adjustments, this browser plugin rectifies the prices shown.
 
 For example:
+
 ![before](before.png)
 ![after](after.png)
 
