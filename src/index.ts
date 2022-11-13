@@ -13,7 +13,7 @@ function fixPrices() {
             if (element.textContent && element.textContent.trim() !== "") {
                 const textParser = domainSelector.textParser || defaultTextParser
                 const formatter = domainSelector.formatter || defaultFormatter
-                element.innerHTML = formatter(moneyRounding(textParser(element.textContent)))
+                element.innerHTML = formatter(moneyRounding(Number.parseFloat(textParser(element.textContent))))
             }
         }
     })

@@ -3,7 +3,7 @@ interface DomainSelector {
 
     formatter?(input: number): string;
 
-    textParser?(input: string): number
+    textParser?(input: string): string
 }
 
 interface DomainSelectors {
@@ -14,21 +14,21 @@ const euroFormat: Intl.NumberFormat = new Intl.NumberFormat("nl-NL", {currency: 
 const dollarFormat: Intl.NumberFormat = new Intl.NumberFormat('en-US', {currency: "USD", style: "currency"})
 
 const parseEuroToNumber = (input: string) => {
-    return Number.parseFloat(input
+    return input
         .replace("€", "")
         .replace(".", "")
         .replace(",", ".")
         .replace("-", "")
         .replace("\n  ", ".")
-        .trim())
+        .trim()
 }
 
 const parseDollarToNumber = (input: string) => {
-    return Number.parseFloat(input
+    return input
         .replace("$", "")
         .replace(",", "")
         .replace("-", "")
-        .trim())
+        .trim()
 }
 
 export const defaultFormatter = (input: number) => euroFormat.format(input)
@@ -39,13 +39,13 @@ export const domainSelectors: DomainSelectors = {
         {
             selector: ".price-amount_root__37xv2",
             textParser: (input) =>
-                Number.parseFloat(input
+                input
                     .replace("€", "")
                     .replace(".", ".")
                     .replace(",", ".")
                     .replace("-", "")
                     .replace("\n  ", ".")
-                    .trim())
+                    .trim()
         }
     ],
     "tweakers.net": [
