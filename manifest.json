@@ -13,7 +13,10 @@
         "*://*.mozilla.org/*",
         "*://*.bol.com/*",
         "*://*.coolblue.nl/*",
-        "*://*.mediamarkt.nl/*"
+        "*://*.mediamarkt.nl/*",
+        "*://*.logitech.com/*",
+        "*://*.tweakers.net/*",
+        "*://*.ah.nl/*"
       ],
       "js": [
         "dist/main.js"

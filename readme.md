@@ -16,6 +16,29 @@ For example:
 | 239   | € 240.00  |
 | 1999  | € 2000.00 |
 
-## Current supported ecommerce websites
+## Current supported websites
 
 - [https://www.coolblue.nl](https://www.coolblue.nl)
+- [https://tweakers.net/](https://tweakers.net/)
+- [https://www.bol.com](https://www.bol.com)
+- [https://www.logitech.com](https://www.logitech.com)
+
+## Building
+
+```shell
+npm run build
+```
+
+## Testing
+
+```shell
+npm run test
+```
+
+## Installing in the browser
+
+### Firefox
+
+1. Go to [about:debugging#/runtime/this-firefox](about:debugging#/runtime/this-firefox)
+2. Click "Load temporary Add-on..."
+3. Select the file `./manifest.json`
