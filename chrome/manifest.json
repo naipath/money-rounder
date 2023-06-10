@@ -4,8 +4,11 @@
   "version": "1.0",
   "description": "Rounds prices to the actual prices",
   "icons": {
-    "48": "../src/icons/moneyrounder.svg",
-    "96": "../src/icons/moneyrounder.svg"
+    "16": "../src/icons/moneyrounder-16.png",
+    "32": "../src/icons/moneyrounder-32.png",
+    "48": "../src/icons/moneyrounder-48.png",
+    "96": "../src/icons/moneyrounder-96.png",
+    "128": "../src/icons/moneyrounder-128.png"
   },
   "content_scripts": [
     {
@@ -30,7 +33,6 @@
     "storage"
   ],
   "action": {
-    "default_icon": "../src/icons/moneyrounder.svg",
     "default_title": "MoneyRounder",
     "default_popup": "../src/popup/popup.html"
   }

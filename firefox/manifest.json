@@ -30,7 +30,6 @@
     "storage"
   ],
   "browser_action": {
-    "default_icon": "../src/icons/moneyrounder.svg",
     "default_title": "MoneyRounder",
     "default_popup": "../src/popup/popup.html"
   }
