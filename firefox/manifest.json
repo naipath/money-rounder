@@ -4,8 +4,8 @@
   "version": "1.0",
   "description": "Rounds prices to the actual prices",
   "icons": {
-    "48": "icons/moneyrounder.svg",
-    "96": "icons/moneyrounder.svg"
+    "48": "../src/icons/moneyrounder.svg",
+    "96": "../src/icons/moneyrounder.svg"
   },
   "content_scripts": [
     {
@@ -19,7 +19,7 @@
         "*://*.ikea.com/*"
       ],
       "js": [
-        "index.ts"
+        "../src/index.ts"
       ]
     }
   ]

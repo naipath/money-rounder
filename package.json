@@ -6,8 +6,11 @@
   "author": "Teije van Sloten",
   "license": "MIT",
   "scripts": {
-    "start": "parcel watch src/manifest.json --host localhost",
-    "build": "parcel build src/manifest.json --no-source-maps",
+    "start": "npm run start:firefox",
+    "start:firefox": "parcel watch firefox/manifest.json --host localhost",
+    "build:firefox": "parcel build firefox/manifest.json --no-content-hash --no-source-maps",
+    "start:chrome": "parcel watch chrome/manifest.json --host localhost",
+    "build:chrome": "parcel build chrome/manifest.json --no-content-hash --no-source-maps",
     "test": "ts-node-esm src/moneyrounder.test.ts",
     "check": "tsc --noEmit"
   },

@@ -35,7 +35,8 @@ Then load the dist package in your browser.
 ## Building
 
 ```shell
-npm run build
+npm run build:firefox
+npm run build:chrome
 ```
 
 ## Testing
