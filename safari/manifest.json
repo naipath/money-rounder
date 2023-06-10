@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "MoneyRounder",
+  "version": "1.0",
+  "description": "Rounds prices to the actual prices",
+  "icons": {
+    "48": "../src/icons/moneyrounder.svg",
+    "96": "../src/icons/moneyrounder.svg"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.bol.com/*",
+        "*://*.coolblue.nl/*",
+        "*://*.mediamarkt.nl/*",
+        "*://*.logitech.com/*",
+        "*://*.tweakers.net/*",
+        "*://*.ah.nl/*",
+        "*://*.ikea.com/*"
+      ],
+      "js": [
+        "../src/index.ts"
+      ]
+    }
+  ],
+  "permissions": []
+}

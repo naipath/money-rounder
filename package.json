@@ -8,9 +8,10 @@
   "scripts": {
     "start": "npm run start:firefox",
     "start:firefox": "parcel watch firefox/manifest.json --host localhost",
-    "build:firefox": "parcel build firefox/manifest.json --no-content-hash --no-source-maps",
+    "build:firefox": "parcel build firefox/manifest.json --no-source-maps",
     "start:chrome": "parcel watch chrome/manifest.json --host localhost",
-    "build:chrome": "parcel build chrome/manifest.json --no-content-hash --no-source-maps",
+    "build:chrome": "parcel build chrome/manifest.json --no-source-maps",
+    "build:safari": "parcel build safari/manifest.json --no-source-maps",
     "test": "ts-node-esm src/moneyrounder.test.ts",
     "check": "tsc --noEmit"
   },
