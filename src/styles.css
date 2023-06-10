@@ -1,0 +1,11 @@
+.touched-by-money-rounder {
+    border-radius: 5px;
+    padding: 3px;
+    background: lightslategrey;
+    color: black;
+}
+
+.touched-by-money-rounder.fade-out {
+    transition: background 1s ease-in-out;
+    background: transparent;
+}

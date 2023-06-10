@@ -10,10 +10,14 @@ function fixPrices() {
     }
     domainSelector.forEach(domainSelector => {
         for (let element of document.querySelectorAll(domainSelector.selector)) {
-            if (element.textContent && element.textContent.trim() !== "") {
+            if (element.textContent && element.textContent.trim() !== "" && !element.classList.contains("touched-by-money-rounder")) {
                 const textParser = domainSelector.textParser || defaultTextParser
                 const formatter = domainSelector.formatter || defaultFormatter
                 element.innerHTML = formatter(moneyRounding(Number.parseFloat(textParser(element.textContent))))
+                if (!element.classList.contains("touched-by-money-rounder")) {
+                    element.classList.add("touched-by-money-rounder")
+                    setTimeout(() => element.classList.add("fade-out"), 200)
+                }
             }
         }
     })

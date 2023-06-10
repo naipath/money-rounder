@@ -72,9 +72,12 @@ export const domainSelectors: DomainSelectors = {
         {selector: ".product-option--price"}
     ],
     "www.mediamarkt.nl": [
-        {selector: ".StyledPriceTypo-jah2p3-7"},
-        {selector: ".WholePrice-sc-1r6586o-7"},
-        {selector: ".StyledStrikePriceTypo-sc-1aiqwai-0"}
+        {selector: ".sc-hLBbgP.hrNqNI"},
+        {selector: ".sc-hLBbgP.casGRl"},
+        {selector: ".sc-hLBbgP.cqEIjg"},
+        {selector: ".sc-hLBbgP.gBcJZS"},
+        {selector: ".sc-hLBbgP.qDhCX"},
+        {selector: ".sc-hLBbgP.cQYlSZ"},
     ],
     "www.bol.com": [
         {

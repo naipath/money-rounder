@@ -20,6 +20,9 @@
       ],
       "js": [
         "../src/index.ts"
+      ],
+      "css": [
+        "../src/styles.css"
       ]
     }
   ],
