@@ -23,9 +23,22 @@ function fixPrices() {
     })
 }
 
-// Try on initial page load
-// Then after 400 milliseconds
-// Then every 1000 milliseconds
-fixPrices()
-setTimeout(fixPrices, 400)
-setInterval(fixPrices, 1000)
+
+function start() {
+    fixPrices()
+    setTimeout(fixPrices, 400)
+    setInterval(fixPrices, 1000)
+}
+
+function getStorage() {
+    if (typeof browser === "undefined") {
+        return chrome.storage.local;
+    }
+    return browser.storage.local;
+}
+
+const storage = getStorage()
+storage.get()
+    .then(({enabled = true}) => {
+        enabled && start()
+    })
