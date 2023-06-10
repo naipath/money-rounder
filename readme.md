@@ -17,6 +17,14 @@ For example:
 | 239   | € 240.00  |
 | 1999  | € 2000.00 |
 
+## Getting started
+
+```shell
+npm run start
+```
+
+Then load the dist package in your browser.
+
 ## Current supported websites
 
 - [https://www.coolblue.nl](https://www.coolblue.nl)
@@ -43,3 +51,9 @@ npm run test
 1. Go to [about:debugging#/runtime/this-firefox](about:debugging#/runtime/this-firefox)
 2. Click "Load temporary Add-on..."
 3. Select the file `./manifest.json`
+
+### Chrome
+
+1. Go to [extensions](chrome://extensions/)
+2. Click "Load unpacked"
+3. Select the folder for this project.

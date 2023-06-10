@@ -1,22 +1,20 @@
 {
-  "name": "currency-rounder",
+  "name": "money-rounder",
   "version": "1.0.0",
-  "description": "",
+  "description": "Rounds money up for various e-commerce websites",
   "type": "module",
-  "source": "src/index.ts",
-  "main": "dist/main.js",
-  "browserslist": ["> 0.5%"],
+  "author": "Teije van Sloten",
+  "license": "MIT",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build --no-content-hash --no-source-maps",
+    "start": "parcel watch src/manifest.json --host localhost",
+    "build": "parcel build src/manifest.json --no-source-maps",
     "test": "ts-node-esm src/moneyrounder.test.ts",
     "check": "tsc --noEmit"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.7.0",
-    "typescript": "^4.8.4",
-    "ts-node": "^10.9.1"
+    "parcel": "^2.9.2",
+    "@parcel/config-webextension": "^2.9.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.3"
   }
 }

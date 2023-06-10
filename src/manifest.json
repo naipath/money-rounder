@@ -10,7 +10,6 @@
   "content_scripts": [
     {
       "matches": [
-        "*://*.mozilla.org/*",
         "*://*.bol.com/*",
         "*://*.coolblue.nl/*",
         "*://*.mediamarkt.nl/*",
@@ -20,7 +19,7 @@
         "*://*.ikea.com/*"
       ],
       "js": [
-        "dist/main.js"
+        "index.ts"
       ]
     }
   ]
